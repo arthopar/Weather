@@ -8,7 +8,7 @@
 import Foundation
 import ObjectMapper
 
-public class WeatherInformation: RemoteResource {
+final public class WeatherInformation: RemoteResource {
 
     // MARK: Declaration for string constants to be used to decode and also serialize.
 	internal let kBaseSysKey: String = "sys"
@@ -44,7 +44,7 @@ public class WeatherInformation: RemoteResource {
     Map a JSON object to this class using ObjectMapper
     - parameter map: A mapping from ObjectMapper
     */
-    public required init?(_ map: Map){
+    public required init?(_ map: Map) {
 
     }
 

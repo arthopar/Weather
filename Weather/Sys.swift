@@ -8,7 +8,7 @@
 import Foundation
 import ObjectMapper
 
-public class Sys: Mappable {
+final public class Sys: Mappable {
 
     // MARK: Declaration for string constants to be used to decode and also serialize.
 	internal let kSysTypeKey: String = "type"
@@ -34,7 +34,7 @@ public class Sys: Mappable {
     Map a JSON object to this class using ObjectMapper
     - parameter map: A mapping from ObjectMapper
     */
-    public required init?(_ map: Map){
+    public required init?(_ map: Map) {
 
     }
 

@@ -8,7 +8,7 @@
 import Foundation
 import ObjectMapper
 
-public class Daily: RemoteResource {
+final public class Daily: RemoteResource {
 
     // MARK: Declaration for string constants to be used to decode and also serialize.
 	internal let kDailyCityKey: String = "city"
@@ -32,7 +32,7 @@ public class Daily: RemoteResource {
     Map a JSON object to this class using ObjectMapper
     - parameter map: A mapping from ObjectMapper
     */
-    public required init?(_ map: Map){
+    public required init?(_ map: Map) {
 
     }
 
@@ -50,7 +50,7 @@ public class Daily: RemoteResource {
     }
 
     // MARK: ResourcePath protocol
-    
+
     static var resourcePath: String {
         get {
             return "forecast/daily"

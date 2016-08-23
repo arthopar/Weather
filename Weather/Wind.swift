@@ -8,7 +8,7 @@
 import Foundation
 import ObjectMapper
 
-public class Wind: Mappable {
+final public class Wind: Mappable {
 
     // MARK: Declaration for string constants to be used to decode and also serialize.
 	internal let kWindSpeedKey: String = "speed"
@@ -28,7 +28,7 @@ public class Wind: Mappable {
     Map a JSON object to this class using ObjectMapper
     - parameter map: A mapping from ObjectMapper
     */
-    public required init?(_ map: Map){
+    public required init?(_ map: Map) {
 
     }
 

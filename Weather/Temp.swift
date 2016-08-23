@@ -8,7 +8,7 @@
 import Foundation
 import ObjectMapper
 
-public class Temp: Mappable {
+final public class Temp: Mappable {
 
     // MARK: Declaration for string constants to be used to decode and also serialize.
 	internal let kTempMinKey: String = "min"
@@ -34,7 +34,7 @@ public class Temp: Mappable {
     Map a JSON object to this class using ObjectMapper
     - parameter map: A mapping from ObjectMapper
     */
-    public required init?(_ map: Map){
+    public required init?(_ map: Map) {
 
     }
 

@@ -8,7 +8,7 @@
 import Foundation
 import ObjectMapper
 
-public class List: Mappable {
+final public class List: Mappable {
 
     // MARK: Declaration for string constants to be used to decode and also serialize.
 	internal let kListSpeedKey: String = "speed"
@@ -40,7 +40,7 @@ public class List: Mappable {
     Map a JSON object to this class using ObjectMapper
     - parameter map: A mapping from ObjectMapper
     */
-    public required init?(_ map: Map){
+    public required init?(_ map: Map) {
 
     }
 

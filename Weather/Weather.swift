@@ -8,7 +8,7 @@
 import Foundation
 import ObjectMapper
 
-public class Weather: Mappable {
+final public class Weather: Mappable {
 
     // MARK: Declaration for string constants to be used to decode and also serialize.
 	internal let kWeatherIconKey: String = "icon"
@@ -30,7 +30,7 @@ public class Weather: Mappable {
     Map a JSON object to this class using ObjectMapper
     - parameter map: A mapping from ObjectMapper
     */
-    public required init?(_ map: Map){
+    public required init?(_ map: Map) {
 
     }
 
